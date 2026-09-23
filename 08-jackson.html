@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8. Jackson Soloist</title>
+</head>
+<body bgcolor="#F5F5F5">
+<center>
+<header>
+<h1>🎸 8. Jackson Soloist</h1>
+<p><a href="index.html">← REGRESAR AL MENÚ PRINCIPAL</a></p>
+<hr>
+</header>
+
+<main>
+<section>
+<figure>
+<img src="jackson.jpg" alt="8. Jackson Soloist" width="350">
+<figcaption>8. Jackson Soloist — coloca aquí la imagen correspondiente.</figcaption>
+</figure>
+<h2>Descripción</h2>
+<p align="justify">La Jackson Soloist es una guitarra eléctrica de aspecto moderno, muy relacionada con géneros como metal y hard rock. Su diseño busca facilitar la interpretación de técnicas de guitarra eléctrica.</p>
+</section>
+<hr>
+<article>
+<h2>Características principales</h2>
+<ul>
+<li>Diseño moderno</li><li>Escala larga en muchas versiones</li><li>Configuraciones con humbuckers</li><li>Asociada con metal y hard rock</li>
+</ul>
+
+<hr>
+<h2>Canvas: dibujo de guitarra</h2>
+<canvas id="guitarraCanvas" width="500" height="220" style="border:1px solid black;">
+Tu navegador no soporta canvas.
+</canvas>
+<script>
+let c=document.getElementById("guitarraCanvas");
+let ctx=c.getContext("2d");
+ctx.beginPath();
+ctx.ellipse(170,110,80,55,0,0,Math.PI*2);
+ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(220,110); ctx.lineTo(430,110); ctx.stroke();
+ctx.beginPath();
+ctx.moveTo(430,90); ctx.lineTo(480,90); ctx.lineTo(480,130); ctx.lineTo(430,130); ctx.stroke();
+ctx.font="20px Arial";
+ctx.fillText("GUITARRA",145,190);
+</script>
+</article>
+<aside>
+<p><strong>Nota:</strong> Los datos de esta página son una descripción general del modelo.</p>
+</aside>
+</main>
+<hr>
+<footer><p>Guitar World - Ian Rogelio Sánchez Martínez</p></footer>
+</center>
+</body>
+</html>
